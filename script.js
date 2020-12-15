@@ -1,5 +1,6 @@
 //start the game
 (function launchApp() {
+    document.body.style.height = window.innerHeight + 'px';
     const gameBoard = document.querySelector(".memory-game");
     const fragment = document.createElement("div");
     createImgArray().map(img => createCard(img)).forEach(card => fragment.appendChild(card));

@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 95vh;
+    height: 90vh;
     background-color: linen;
     font-family: Manrope;
     color: #314455;
@@ -31,6 +31,12 @@ body {
     justify-content: center;
     margin-top: 2rem;
     white-space: pre;
+}
+
+@media screen and (min-width: 40em) {
+    .header, .game {
+        width: 700px;
+    }
 }
 
 .license a {
@@ -76,6 +82,7 @@ img {
 }
 
 .front {
+
     transform: rotateY(180deg);
 }
 
