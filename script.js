@@ -11,7 +11,7 @@ function createImgArray() {
     for (let i = 1; i < 11; i++) {
         imgArray.push("kitty-" + i);
     }
-    imgArray.concat(imgArray);
+    imgArray.push(...imgArray);
     return imgArray;
 }
 
