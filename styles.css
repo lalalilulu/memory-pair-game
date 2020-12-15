@@ -34,7 +34,7 @@ body {
 }
 
 @media screen and (min-width: 40em) {
-    .header, .game {
+    .memory-game {
         width: 700px;
     }
 }
