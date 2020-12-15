@@ -1,6 +1,5 @@
 //start the game
 (function launchApp() {
-    document.body.style.height = window.innerHeight + 'px';
     const gameBoard = document.querySelector(".memory-game");
     const fragment = document.createElement("div");
     createImgArray().map(img => createCard(img)).forEach(card => fragment.appendChild(card));
@@ -12,7 +11,7 @@ function createImgArray() {
     for (let i = 1; i < 11; i++) {
         imgArray.push("kitty-" + i);
     }
-    imgArray.push(...imgArray);
+    imgArray.concat(imgArray);
     return imgArray;
 }
 
@@ -35,7 +34,6 @@ function createElementWithClass(tagName, cssClass) {
 }
 
 const cards = document.querySelectorAll(".memory-card");
-console.log(cards);
 cards.forEach(card => card.addEventListener("click", flipCard));
 
 let lockBoard = false;
