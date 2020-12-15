@@ -8,12 +8,19 @@
 
 body {
     height: 95vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: linen;
     font-family: Manrope;
     color: #314455;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
 .license {
@@ -22,6 +29,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     justify-content: center;
+    margin-top: 2rem;
     white-space: pre;
 }
 
@@ -35,9 +43,7 @@ img {
 
 .memory-game {
     width: 50%;
-    min-width: 640px;
     height: 75%;
-    min-height: 640px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
